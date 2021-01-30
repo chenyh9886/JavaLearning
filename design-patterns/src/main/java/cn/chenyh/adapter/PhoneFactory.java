@@ -1,5 +1,7 @@
-package cn.chenyh.factory;
+package cn.chenyh.adapter;
 
+import cn.chenyh.factory.IFactory;
+import cn.chenyh.product.Desktop;
 import cn.chenyh.product.Phone;
 
 /**
@@ -12,7 +14,6 @@ public class PhoneFactory implements IFactory {
 
     @Override
     public Phone createPhone() {
-        System.out.println("生产一个手机");
         return new Phone();
     }
 

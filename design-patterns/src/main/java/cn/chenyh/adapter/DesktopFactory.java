@@ -1,5 +1,6 @@
-package cn.chenyh.factory;
+package cn.chenyh.adapter;
 
+import cn.chenyh.factory.IFactory;
 import cn.chenyh.product.Desktop;
 
 /**

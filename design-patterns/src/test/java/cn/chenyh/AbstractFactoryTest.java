@@ -1,9 +1,9 @@
 package cn.chenyh;
 
-import cn.chenyh.factory.ElectronicFactory;
+
+import cn.chenyh.adapter.ElectronicFactoryAdapter;
 import cn.chenyh.factory.IFactory;
-import cn.chenyh.factory.PhoneFactory;
-import cn.chenyh.product.Phone;
+import cn.chenyh.factory.ProducerAbstractFactory;
 import org.junit.Test;
 
 /**
@@ -16,7 +16,7 @@ public class AbstractFactoryTest {
 
     @Test
     public void getProduct() {
-        ElectronicFactory factory = new ElectronicFactory();
+        ProducerAbstractFactory factory = new ProducerAbstractFactory();
 
         IFactory phoneFactory = factory.getFactoryByName("phone");
         System.out.println(phoneFactory.createPhone().getDescription());
